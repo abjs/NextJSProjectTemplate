@@ -7,3 +7,4 @@
  - Type Script
  - Styled Components
  - Material Ui
+ - Prisma ORM
