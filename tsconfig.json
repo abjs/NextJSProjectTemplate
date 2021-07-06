@@ -32,6 +32,9 @@
       ],
       "@styled/*": [
         "src/components/styled/*"
+      ],
+      "@material/*": [
+        "src/styles/Material/*"
       ]
     }
   },

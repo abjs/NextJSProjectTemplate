@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { FC } from "react";
+import { FC, ReactElement } from "react";
 interface Props {
     title?: string;
-    children: JSX.Element | null;
+    children: ReactElement<any,any>;
     className?: string
 }
 export const Layout: FC<Props> = ({ title, children, className }) => {
