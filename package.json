@@ -13,6 +13,7 @@
     "@material-ui/core": "^4.12.0",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
+    "@prisma/client": "^2.26.0",
     "@types/material-ui": "^0.21.8",
     "next": "11.0.1",
     "react": "17.0.2",
@@ -27,7 +28,9 @@
     "babel-plugin-styled-components": "^1.13.1",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
-    "typescript": "4.3.5",
+    "prisma": "2.26.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
     "typescript-styled-plugin": "^0.18.0"
   }
 }
