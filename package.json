@@ -7,7 +7,10 @@
     "build": "next build",
     "html": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db": "prisma studio",
+    "mg":"prisma migrate dev --name initial-migration --create-only",
+    "generate": "prisma generate"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.0",
