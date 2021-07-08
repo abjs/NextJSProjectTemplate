@@ -3,7 +3,7 @@
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL_Live")
+  url      = env("DATABASE_URL")
 }
 
 generator client {
@@ -12,7 +12,7 @@ generator client {
 
 model User {
   id       Int    @id @default(autoincrement())
-  username String 
+  username String @unique @db.VarChar(255)
   posts    Post[]
 
   @@map(name: "user")
@@ -20,8 +20,8 @@ model User {
 
 model Post {
   id         Int      @id @default(autoincrement())
-  title      String
-  post       String  
+  title      String 
+  post       String  @unique @db.VarChar(255)
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
   user       User     @relation(fields: [user_id], references: [id])
